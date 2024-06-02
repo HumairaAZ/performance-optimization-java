@@ -4,9 +4,10 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        // Simulate some work
-        for (int i = 0; i < 1000000; i++) {
-            Math.sin(i);
+        // Optimized work
+        double[] results = new double[1000000];
+        for (int i = 0; i < results.length; i++) {
+            results[i] = Math.sin(i);
         }
 
         long endTime = System.currentTimeMillis();
